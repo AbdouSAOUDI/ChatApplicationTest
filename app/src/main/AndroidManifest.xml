@@ -10,8 +10,11 @@
 		android:roundIcon="@mipmap/ic_launcher_round"
 		android:supportsRtl="true"
 		android:theme="@style/Theme.AppCompat.NoActionBar">
-		<activity android:name=".RegisterLogin" android:screenOrientation="portrait"
-			tools:ignore="LockedOrientationActivity"></activity>
+		<activity android:name=".ToufikList"></activity>
+		<activity
+			android:name=".RegisterLogin"
+			android:screenOrientation="portrait"
+			tools:ignore="LockedOrientationActivity" />
 		<activity
 			android:name=".MainActivity"
 			android:screenOrientation="portrait"

@@ -12,22 +12,24 @@
 		android:layout_width="match_parent"
 		android:layout_height="?attr/actionBarSize"
 		android:orientation="horizontal">
+
 		<LinearLayout
 			android:id="@+id/RegisterBtnLL"
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			android:layout_weight="1"
 			android:background="@color/colorPrimary"
-			android:paddingBottom="6dp"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:paddingBottom="6dp">
+
 			<Button
 				android:id="@+id/RegisterBtn"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:onClick="RegisterBtnClick"
-				android:textColor="@color/colorPrimaryDark"
 				android:background="@color/colorPrimary"
-				android:text="Register" />
+				android:onClick="RegisterBtnClick"
+				android:text="Register"
+				android:textColor="@color/colorPrimaryDark" />
 		</LinearLayout>
 
 		<LinearLayout
@@ -35,18 +37,18 @@
 			android:layout_width="0dp"
 			android:layout_height="match_parent"
 			android:layout_weight="1"
-			android:paddingBottom="6dp"
 			android:background="@color/colorPrimaryDark"
-			android:orientation="horizontal">
+			android:orientation="horizontal"
+			android:paddingBottom="6dp">
 
 			<Button
 				android:id="@+id/LoginBtn"
 				android:layout_width="match_parent"
 				android:layout_height="match_parent"
-				android:onClick="LoginBtnClick"
-				android:textColor="@android:color/black"
 				android:background="@color/colorPrimary"
-				android:text="Login" />
+				android:onClick="LoginBtnClick"
+				android:text="Login"
+				android:textColor="@android:color/black" />
 		</LinearLayout>
 	</LinearLayout>
 
@@ -61,7 +63,8 @@
 		android:layout_width="match_parent"
 		android:layout_height="0dp"
 		android:layout_weight="2"
-		android:orientation="vertical">
+		android:orientation="vertical"
+		android:paddingHorizontal="16dp">
 
 		<TextView
 			android:id="@+id/TitleTV"
@@ -80,21 +83,83 @@
 				android:id="@+id/FormLL"
 				android:layout_width="match_parent"
 				android:layout_height="wrap_content"
-				android:background="@color/colorPrimary"
 				android:orientation="vertical">
 
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:src="@drawable/person" />
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:paddingHorizontal="8dp"
+						android:text="Username"
+						android:textColor="@color/colorPrimary" />
+				</LinearLayout>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="username"
+					android:paddingHorizontal="8dp"
+					android:textColor="@color/colorPrimary"
+					android:textColorHint="@color/colorPrimaryDark" />
+
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="24dp"
+					android:orientation="horizontal">
+
+					<ImageView
+						android:layout_width="wrap_content"
+						android:layout_height="match_parent"
+						android:src="@drawable/ic_lock_open" />
+
+					<TextView
+						android:layout_width="0dp"
+						android:layout_height="wrap_content"
+						android:layout_weight="1"
+						android:paddingHorizontal="8dp"
+						android:text="Password"
+						android:textColor="@color/colorPrimary" />
+				</LinearLayout>
+
+				<EditText
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:hint="password"
+					android:inputType="textPassword"
+					android:paddingHorizontal="8dp"
+					android:textColor="@color/colorPrimary"
+					android:textColorHint="@color/colorPrimaryDark" />
+
+				<CheckBox
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:layout_marginTop="24dp"
+					android:text="Remember me." />
 			</LinearLayout>
 		</ScrollView>
 	</LinearLayout>
+
 	<Button
 		android:id="@+id/ContinueBtn"
 		android:layout_width="match_parent"
 		android:layout_height="?attr/actionBarSize"
 		android:layout_marginHorizontal="16dp"
 		android:backgroundTint="@color/colorPrimary"
-		android:textColor="@color/darkBlue"
 		android:onClick="ContinueBtnClick"
-		android:text="Continue" />
+		android:text="Continue"
+		android:textColor="@color/darkBlue" />
 </LinearLayout>    <!--
 <LinearLayout
 		android:layout_width="match_parent"

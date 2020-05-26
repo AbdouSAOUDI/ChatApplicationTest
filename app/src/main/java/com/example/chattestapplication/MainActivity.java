@@ -20,12 +20,16 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void EnglishBtnClick(View view)
-    {
+    public void EnglishBtnClick(View view) {
         Intent mainToRegister = new Intent(getApplicationContext(), RegisterLogin.class);
         mainToRegister.putExtra("Type", true);
-        Button btn = (Button) findViewById(R.id.EnglishBtn);
+        Button btn = findViewById(R.id.EnglishBtn);
         mainToRegister.putExtra("Language", btn.getText().toString());
         startActivity(mainToRegister);
+    }
+
+    public void ToufikBtnClick(View view) {
+        Intent mainToToufik = new Intent(this, ToufikList.class);
+        startActivity(mainToToufik);
     }
 }
